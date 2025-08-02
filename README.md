@@ -14,26 +14,36 @@
 クライアント
 (Webブラウザ/スマホ等)
       │
-      │ HTTPS(リクエスト)
+      │  HTTPS(リクエスト)
       ▼
-Netlify（静的ファイル配信）
-└─ React(TypeScript)SPA
+┌────────────────────────────┐
+│      Netlify                │
+│   ──────────────           │
+│   フロントエンド            │
+│   [React] [TypeScript]      │
+└────────────────────────────┘
+      │           │
+      │           │
+      │           └─────────────→ Google Analytics
       │
-      │ APIリクエスト (fetch/axios)
+      │  REST API (fetch/axios)
       ▼
-任意クラウド
-└─ Java SpringBoot API
-      └─ Controller(REST API)
-      └─ Service(ロジック)
+┌────────────────────────────┐
+│     任意クラウド            │
+│   ──────────────           │
+│   バックエンド              │
+│   [Java] [Spring Boot]      │
+└────────────────────────────┘
       │
       ▼
    任意DB
 
-React(TypeScript)SPA ─────────→ Google Analytics
-
-[次期実装]
-・CI/CD
-・エラーログ・モニタリング（Sentry）
+──────────────────────────────
+  次期実装
+    ・CI/CD
+    ・エラーログ・モニタリング
+      （Sentry（センチュリー））
+──────────────────────────────
 
 ```
 
