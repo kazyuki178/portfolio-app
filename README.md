@@ -35,4 +35,4 @@ React(TypeScript)SPA ─────────→ Google Analytics
 ・CI/CD
 ・エラーログ・モニタリング（Sentry）
 
-(./architect/architect.png)
+![構成図](./architect/architect.png)
