@@ -38,4 +38,4 @@ React(TypeScript)SPA ─────────→ Google Analytics
 ```
 
 
-![構成図](/architect/architect.png)
+<img src="/architect/architect.png" alt="構成図" width="300" />
