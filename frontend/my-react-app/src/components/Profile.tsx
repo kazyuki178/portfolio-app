@@ -1,5 +1,5 @@
-import React from 'react'
-import TopImg from './TopImg'
+import React from 'react';
+import TopImg from './TopImgAndSnsLinks';
 
 function Profile() {
     return (

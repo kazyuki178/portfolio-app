@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
             <header className='bg-red-400'>
-                <ul className='p-4 flex space-x-8 font-bold text-lg'>
+                <ul className='p-4 flex gap-8 font-bold text-lg'>
                     {PAGESROUTEINFO.map(element => (
                         <li className='first:ml-4' key={element.path}>
                             <Link to={element.path}>{element.name}</Link>
