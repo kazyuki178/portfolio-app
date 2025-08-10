@@ -7,3 +7,13 @@
 body {
     font-family: 'M PLUS 1p', sans-serif;
 }
+
+.blinking-cursor {
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
