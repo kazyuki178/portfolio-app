@@ -1,10 +1,21 @@
 import React from 'react';
-import TopImg from './TopImgAndSnsLinks';
+import TopImgAndSnsLinks from './TopImgAndSnsLinks';
+import Bio from './Bio';
 
 function Profile() {
     return (
         <>
-            <TopImg />
+            <div className='flex'>
+
+                <div className='flex-col'>
+                    <TopImgAndSnsLinks />
+                </div>
+
+                <div className='flex-col'>
+                    <Bio />
+                </div>
+
+            </div>
         </>
     )
 }
