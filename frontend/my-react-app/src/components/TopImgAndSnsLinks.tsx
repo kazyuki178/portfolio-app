@@ -34,8 +34,9 @@ function TopImg() {
     return (
         <>
             <div className='flex flex-col items-center'>
-                <img src='/Me.jpg' className='w-80 rounded-full' />
-                <ul className='flex gap-4'>
+                <img src='/Me.jpg' className='w-80 rounded-full ' />
+
+                <ul className='flex gap-4 mt-6'>
                     {snsIcons.map((element) => (
                         <li key={element.link}>
                             {/* noopener 	Reverse Tabnabbing（元ページの乗っ取り）対策
