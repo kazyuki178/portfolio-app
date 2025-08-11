@@ -1,21 +1,26 @@
 import AboutMe from '../pages/AboutMe';
 import Contact from '../pages/Contact';
 import TechArticle from '../pages/TechArticle';
-import Home from '../pages/Home';
 import { ComponentType } from 'react';
+import Profile from '../components/Profile';
 
 
 type RouteType = {
     path: string;
     name: string;
-    component: ComponentType<any>;
+    component: React.ComponentType;
 };
 
 export const PAGESROUTEINFO: RouteType[] = [
     {
         path: "/",
         name: "Home",
-        component: Home,
+        component: () => (
+            <>
+                <Profile />
+                {/* recent activity 次期実装 */}
+            </>
+        ),
     },
     {
         path: "/AboutMe",
