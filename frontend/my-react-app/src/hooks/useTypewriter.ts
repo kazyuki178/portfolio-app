@@ -14,7 +14,6 @@ function useTypewriter(codeText:string, speed:number) {
         }
     }, [currentIndex, codeText, speed]);
 
-    // ここで値をreturnする！
     return displayedText;
 }
 
