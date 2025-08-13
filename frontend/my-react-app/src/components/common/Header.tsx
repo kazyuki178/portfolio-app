@@ -8,9 +8,9 @@ function Header() {
     return (
         <>
             <header className='bg-white'>
-                <ul className='text-sm pt-9 flex justify-center gap-7 font-bold  sm:text-lg sm:gap-12 md:gap-28 lg:gap-36' >
+                <ul className='text-md pt-9 flex justify-center gap-8 font-bold  sm:text-lg sm:gap-12 md:gap-28 lg:gap-36' >
                     {PAGESROUTEINFO.map(({path,name}) => (
-                        <li className='first:ml-4' key={path}>
+                        <li  key={path}>
                             <Link to={path}>{name}</Link>
                         </li>
                     ))}

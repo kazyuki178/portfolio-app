@@ -29,7 +29,7 @@ Network, Security`;
         // xl: 1280px以上   // デスクトップ
         // 2xl:1536px以上   // 大型ディスプレイ
         <div className=' w-[350px] sm:w-[500px]  md:w-[350px] lg:w-[500px] text-sm'>
-            <div className=" bg-gray-900 text-green-400 p-4 rounded-lg font-mono shadow-2xl min-h-[180px]" style={{ whiteSpace: 'pre-wrap' }}>
+            <div className=" bg-gray-900 text-green-400 p-4 rounded-lg font-mono shadow-2xl min-h-[160px]" style={{ whiteSpace: 'pre-wrap' }}>
                 {displayedMeInfoText}
                 <span className="blinking-cursor text-white">|</span>
             </div>
