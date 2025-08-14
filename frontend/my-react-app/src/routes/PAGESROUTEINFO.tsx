@@ -1,40 +1,14 @@
-import AboutMe from '../pages/AboutMe';
-import Contact from '../pages/Contact';
-import TechArticle from '../pages/TechArticle';
-import { ComponentType } from 'react';
-import Profile from '../components/Profile';
 
-
-type RouteType = {
-    path: string;
+type navType = {
     name: string;
-    component: React.ComponentType;
+    href: string;
 };
 
-export const PAGESROUTEINFO: RouteType[] = [
-    {
-        path: "/",
-        name: "Home",
-        component: () => (
-            <>
-                <Profile />
-                {/* recent activity 次期実装 */}
-            </>
-        ),
-    },
-    {
-        path: "/AboutMe",
-        name: "About Me",
-        component: AboutMe,
-    },
-    {
-        path: "/TechArticle",
-        name: "Tech Article",
-        component: TechArticle,
-    },
-    {
-        path: "/Contact",
-        name: "Contact",
-        component: Contact,
-    }
-]
+const NAV_ITEMS:navType[] = [
+    { name: "Home", href: "/" },
+    { name: "About Me", href: "/about-me" },
+    { name: "Tech Article", href: "/tech-article" },
+    { name: "Contact", href: "/contact" },
+];
+
+export default NAV_ITEMS;

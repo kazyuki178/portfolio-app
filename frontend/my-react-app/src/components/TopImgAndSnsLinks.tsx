@@ -1,3 +1,4 @@
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
@@ -40,7 +41,7 @@ function TopImg() {
     return (
         <>
             <div className='flex flex-col items-center   '>
-                <img src='/Me.jpg' className='w-60 md:w-80 rounded-full ' />
+                <img src='/Me.jpg' className='w-60 h-60 md:w-80 md:h-80 rounded-full ' />
 
                 <h1 className='mt-6  text-2xl h-[64px]' style={{ whiteSpace: "pre-wrap" }}>{typeWriteName}
                     <span className="blinking-cursor text-black">|</span>

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import TopImgAndSnsLinks from './TopImgAndSnsLinks';
 import Bio from './Bio';

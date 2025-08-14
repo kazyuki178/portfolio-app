@@ -12,10 +12,34 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "strict": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
+    // "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
