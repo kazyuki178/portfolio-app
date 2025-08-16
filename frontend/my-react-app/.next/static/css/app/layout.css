@@ -443,11 +443,11 @@ video {
 .flex{
   display: flex;
 }
-.h-\[64px\]{
-  height: 64px;
-}
 .h-60{
   height: 15rem;
+}
+.h-\[64px\]{
+  height: 64px;
 }
 .min-h-\[160px\]{
   min-height: 160px;
