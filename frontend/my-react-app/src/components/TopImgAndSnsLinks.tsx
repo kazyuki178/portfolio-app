@@ -5,30 +5,36 @@ import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBookAtlas } from '@fortawesome/free-solid-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import Image from 'next/image';
 import useTypewriter from '../hooks/useTypewriter';
 function TopImg() {
 
     type SnsIconType = {
         icon: IconDefinition;
         link: string;
+        name: string;
     }
 
     const snsIcons: SnsIconType[] = [
         {
             icon: faLinkedin,
-            link: "https://www.linkedin.com/in/%E5%92%8C%E6%A8%B9-%E7%9F%A2%E6%A9%8B-98b757301/"
+            link: "www.linkedin.com/in/和樹-矢橋-98b757301",
+            name: "LinkedIn"
         },
         {
             icon: faSquareGithub,
-            link: "https://github.com/kazuki178"
+            link: "https://github.com/kazuki178",
+            name: "GitHub"
         },
         {
             icon: faSquareXTwitter,
-            link: "https://x.com/178_c_m_"
+            link: "https://x.com/178_c_m_",
+            name: "X"
         },
         {
             icon: faBookAtlas,
-            link: "https://qiita.com/178_c_m"
+            link: "https://qiita.com/178_c_m",
+            name: "Qiita"
         }
     ];
 
@@ -40,8 +46,13 @@ function TopImg() {
 
     return (
         <>
-            <div className='flex flex-col items-center   '>
-                <img src='/Me.jpg' className='w-60 h-60 md:w-80 md:h-80 rounded-full ' />
+            <div className='flex flex-col items-center'>
+                {/* 
+                画像の元サイズ（ピクセル）**として240×240を指定
+                これによって、Next.jsは画像のアスペクト比やレイアウトを安定化
+                そして、Tailwindのmd:w-80 md:h-80でサイズによってImageの大きさを変更
+                */}
+                <Image src='/Me.jpg' className=' md:w-80 md:h-80 rounded-full ' width={240} height={240} alt='プロフィール画像' />
 
                 <h1 className='mt-6  text-2xl h-[64px]' style={{ whiteSpace: "pre-wrap" }}>{typeWriteName}
                     <span className="blinking-cursor text-black">|</span>
@@ -55,6 +66,7 @@ function TopImg() {
                             デフォルトブラウザで対応済みだけど一応明示 */}
                             <a href={element.link} target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={element.icon} size='3x' className='transition-transform duration-300  hover:scale-110' />
+                                <p className='text-center'>{element.name}</p>
                             </a>
                         </li>
                     ))}
