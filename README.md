@@ -46,4 +46,4 @@
 ```
 
 
-<img src="/architect-infomation/architect.drawio.png" alt="構成図" width="600" />
+<img src="/architect-infomation/architect.png" alt="構成図" width="600" />
