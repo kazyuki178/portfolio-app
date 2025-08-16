@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+
 import useTypewriter from '../hooks/useTypewriter';
 
 function Bio() {

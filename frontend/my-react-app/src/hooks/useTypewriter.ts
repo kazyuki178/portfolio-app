@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from 'react';
 
 function useTypewriter(codeText:string, speed:number) {

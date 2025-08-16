@@ -1,39 +1,30 @@
+# ポートフォリオサイト開発環境ドキュメント（Next.js）
+
 ## 使用技術・ツール
 
-- **React**  
-  UI構築のためのJavaScriptライブラリ
+- **Next.js 15.4.6 (App Router)**  
+  Reactベースのフルスタックフレームワーク。ルーティングはフォルダ構造で自動生成され、SSR/SSG/ISRが簡単に利用可能。
 
-- **Create React App**  
-  Reactプロジェクトのセットアップツール
+- **React 19.1.1 / ReactDOM 19.1.1**  
+  UI構築のためのライブラリ。Next.js 内部で使用。
 
-- **Vite**  
-  高速な開発サーバー・ビルドツール（
+- **Node.js v22.3.0**  
+  Next.js 開発・ビルドに対応する最新安定版。
 
 - **Tailwind CSS**  
-  ユーティリティファーストなCSSフレームワーク
+  ユーティリティファーストなCSSフレームワーク。グローバルCSS (`globals.css`) で全ページに適用。
 
 - **Font Awesome**  
-  アイコンの表示（`@fortawesome/react-fontawesome`, `@fortawesome/free-brands-svg-icons`, `@fortawesome/free-solid-svg-icons`）
+  アイコン表示（`@fortawesome/react-fontawesome`, `@fortawesome/free-brands-svg-icons`, `@fortawesome/free-solid-svg-icons`）。
 
-- **Netlify**  
-  サイトのデプロイ・ホスティングサービス(予定)
+- **Vercel / Netlify**  
+  サイトのデプロイ・ホスティングサービス（Next.js は Vercel 推奨）。
 
-- **React Router**  
-  ページ遷移（SPAルーティング）用ライブラリ
+- **TypeScript**  
+  型安全な JavaScript 開発に使用。
 
 ---
 
 ## 追加情報
 
-- 画像は `public` フォルダに配置
-- 外部リンクは `<a>` タグを使用し、`target="_blank"` + `rel="noopener noreferrer"` を付与
-- SNSアイコンは Font Awesome を利用
-
----
-
-## インストール済みパッケージ例
-
-```bash
-npm install react react-dom
-npm install tailwindcss
-npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
+- **App Router 構成例**
