@@ -1,3 +1,3 @@
 export interface ProfileProps{
-    detailed:boolean;
+    detailed?:boolean;
 }
