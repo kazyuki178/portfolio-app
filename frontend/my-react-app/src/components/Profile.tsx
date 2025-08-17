@@ -11,7 +11,7 @@ const Profile = ({detailed}:ProfileProps) => {
         <>
             <div className='flex flex-col md:flex-row gap-20 justify-center items-center mt-28 '>
                 <TopImgAndSnsLinks />
-                <Bio detailed={detailed}/>
+                <Bio detailed={detailed??false}/>
             </div>
 
         </>

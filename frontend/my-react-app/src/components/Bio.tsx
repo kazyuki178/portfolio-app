@@ -50,8 +50,8 @@ Network, Security`;
     const meInfoTypeSpeed:number=30;
     const meBackgroundTypeSpeed:number=55;
 
-    const displayedMeInfoText = useTypewriter(meInfo, devTypeSpeed);
-    const displayedBackgroundText = useTypewriter(meBackground, devTypeSpeed);
+    const displayedMeInfoText = useTypewriter(meInfo, meInfoTypeSpeed);
+    const displayedBackgroundText = useTypewriter(meBackground, meBackgroundTypeSpeed);
 
     return (
 
