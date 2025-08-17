@@ -2,16 +2,18 @@
 import React from 'react';
 import TopImgAndSnsLinks from './TopImgAndSnsLinks';
 import Bio from './Bio';
+import { ProfileProps } from '../interfaces/ProfileProps';
 
 
-function Profile() {
+
+const Profile = ({detailed}:ProfileProps) => {
     return (
         <>
             <div className='flex flex-col md:flex-row gap-20 justify-center items-center mt-28 '>
                 <TopImgAndSnsLinks />
-                <Bio />
+                <Bio detailed={detailed}/>
             </div>
-            
+
         </>
     )
 }
