@@ -58,7 +58,7 @@ function TopImg() {
                     <span className="blinking-cursor text-black">|</span>
                 </h1>
 
-                <ul className='flex gap-4 mt-6'>
+                <ul className='flex gap-7 mt-6'>
                     {snsIcons.map((element) => (
                         <li key={element.link}>
                             {/* noopener 	Reverse Tabnabbing（元ページの乗っ取り）対策
@@ -66,7 +66,7 @@ function TopImg() {
                             デフォルトブラウザで対応済みだけど一応明示 */}
                             <a href={element.link} target='_blank' rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={element.icon} size='3x' className='transition-transform duration-300  hover:scale-110' />
-                                <p className='text-center'>{element.name}</p>
+                                <p className='text-center text-sm'>{element.name}</p>
                             </a>
                         </li>
                     ))}
