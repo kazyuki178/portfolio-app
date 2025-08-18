@@ -18,7 +18,7 @@ function TopImg() {
     const snsIcons: SnsIconType[] = [
         {
             icon: faLinkedin,
-            link: "www.linkedin.com/in/和樹-矢橋-98b757301",
+            link: "https://www.linkedin.com/in/kazyuki178/",
             name: "LinkedIn"
         },
         {
