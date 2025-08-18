@@ -23,17 +23,17 @@ function TopImg() {
         },
         {
             icon: faSquareGithub,
-            link: "https://github.com/kazuki178",
+            link: "https://github.com/kazyuki178",
             name: "GitHub"
         },
         {
             icon: faSquareXTwitter,
-            link: "https://x.com/178_c_m_",
+            link: "https://x.com/kazyuki178",
             name: "X"
         },
         {
             icon: faBookAtlas,
-            link: "https://qiita.com/178_c_m",
+            link: "https://qiita.com/kazyuki178",
             name: "Qiita"
         }
     ];
