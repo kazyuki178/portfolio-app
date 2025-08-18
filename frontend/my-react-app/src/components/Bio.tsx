@@ -14,7 +14,7 @@ const Bio = ({ detailed }: ProfileProps) => {
     // trueのときはaboutmeのpath
     if (detailed) {
         meInfo = `const profile = { 
-    job: "IT",
+    job: "ITエンジニア",
     nameKanji: "矢橋 和樹",
     nameRoman: "kazuki yahashi",
     qualification: "応用情報技術者",
