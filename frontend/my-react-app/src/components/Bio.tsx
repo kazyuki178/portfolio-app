@@ -24,8 +24,8 @@ const Bio = ({ detailed }: ProfileProps) => {
     const meInfoTypeSpeed: number = 30;
     const meBackGroundInfoTypeSpeed: number = 55;
 
-    const displayedMeInfoText = useTypewriter(meInfo, devTypeSpeed);
-    const displayedBackgroundText = useTypewriter(meBackGroundInfo, devTypeSpeed);
+    const displayedMeInfoText = useTypewriter(meInfo, meInfoTypeSpeed);
+    const displayedBackgroundText = useTypewriter(meBackGroundInfo, meBackGroundInfoTypeSpeed);
 
     return (
 

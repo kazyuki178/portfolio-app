@@ -3,7 +3,7 @@ import './globals.css';
 
 export const metadata = {
     title: 'kazuki’s Portfolio',
-    description: '説明文',
+    description: 'ITエンジニア 矢橋和樹のポートフォリオサイト',
 };
 
 const RootLayout = ({ children, }: {
