@@ -4,6 +4,9 @@ import './globals.css';
 export const metadata = {
     title: 'kazuki’s Portfolio',
     description: 'ITエンジニア 矢橋和樹のポートフォリオサイト',
+    icons: {
+        icon: "/favicon.ico",
+    }
 };
 
 const RootLayout = ({ children, }: {
