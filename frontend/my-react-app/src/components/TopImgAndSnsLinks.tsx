@@ -52,7 +52,7 @@ function TopImg() {
                 これによって、Next.jsは画像のアスペクト比やレイアウトを安定化
                 そして、Tailwindのmd:w-80 md:h-80でサイズによってImageの大きさを変更
                 */}
-                <Image src='/Me.jpg' className=' md:w-80 md:h-80 rounded-full ' width={240} height={240} alt='プロフィール画像' />
+                <Image src='/Me.jpg' className=' md:w-80 md:h-80 rounded-full ' width={240} height={240} alt='矢橋和樹のプロフィール画像' />
 
                 <h1 className='mt-6  text-2xl h-[64px]' style={{ whiteSpace: "pre-wrap" }}>{typeWriteName}
                     <span className="blinking-cursor text-black">|</span>
