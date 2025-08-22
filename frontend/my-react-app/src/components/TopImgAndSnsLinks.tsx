@@ -41,7 +41,7 @@ function TopImg() {
     const name: string = `Kazuki Yahashi
     矢橋 和樹 `;
 
-    const typeWriteName = useTypewriter(name, 100);
+    const typeWriteName = useTypewriter(name,"name", 100);
 
 
     return (

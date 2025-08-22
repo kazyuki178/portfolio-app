@@ -8,24 +8,26 @@ import { ProfileProps } from '../interfaces/ProfileProps';
 const Bio = ({ detailed }: ProfileProps) => {
     let meInfo: string;
     let meBackGroundInfo: string;
-
+    let pageKey: string;
 
     // trueのときはaboutmeのpath
     if (detailed) {
         meInfo = profileData.detail.meInfo;
         meBackGroundInfo = profileData.detail.meBackGroundInfo;
+        pageKey = "aboutme";
         // elseは/でアクセスされたトップページ
     } else {
         meInfo = profileData.basic.meInfo;
         meBackGroundInfo = profileData.basic.meBackGroundInfo;
+        pageKey = "index";
     }
 
     const devTypeSpeed: number = 10;
     const meInfoTypeSpeed: number = 30;
     const meBackGroundInfoTypeSpeed: number = 55;
 
-    const displayedMeInfoText = useTypewriter(meInfo, meInfoTypeSpeed);
-    const displayedBackgroundText = useTypewriter(meBackGroundInfo, meBackGroundInfoTypeSpeed);
+    const displayedMeInfoText = useTypewriter(meInfo, pageKey, meInfoTypeSpeed);
+    const displayedBackgroundText = useTypewriter(meBackGroundInfo,pageKey, meBackGroundInfoTypeSpeed);
 
     return (
 
