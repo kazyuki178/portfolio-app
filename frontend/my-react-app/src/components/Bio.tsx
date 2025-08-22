@@ -22,7 +22,6 @@ const Bio = ({ detailed }: ProfileProps) => {
         pageKey = "index";
     }
 
-    const devTypeSpeed: number = 10;
     const meInfoTypeSpeed: number = 30;
     const meBackGroundInfoTypeSpeed: number = 55;
 

@@ -12,19 +12,23 @@ function useTypewriter(
     const [displayedText, setDisplayedText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // 2回目以降かどうかをrefで管理
+    // nameのときは常にspeed、それ以外は2回目以降判定
+    const isAlwaysNormalSpeed:boolean = pageKey === "name";
+
+    // isAlwaysNormalSpeedがtrue（＝pageKeyが"name"）なら、falseを初期値にする（初回表示扱い）
+    // isSecondTimeはpageKeyがtrueならfalseで初期表示、そうじゃないならset内を見てなければ新規(false)、あれば表示済み(true)として扱う
     const isSecondTime = useRef(shownPages.has(pageKey));
-    // 今回使うスピード
-    const currentSpeed = isSecondTime.current ? afterSpeed : speed;
+
+    const currentSpeed = isAlwaysNormalSpeed
+        ? speed
+        : (isSecondTime.current ? afterSpeed : speed);
 
     useEffect(() => {
-        // codeTextやpageKeyが変わると、表示テキストとインデックスをリセット。
-        // 2回目以降かどうかも再判定。
         setDisplayedText("");
         setCurrentIndex(0);
-        // stateだとレンダリング時の保持がsetを使っても動作不安定なのでrefを扱う
-        isSecondTime.current = shownPages.has(pageKey);
-    }, [codeText, pageKey]);
+        // nameのときは2回目判定しない
+        isSecondTime.current = isAlwaysNormalSpeed ? false : shownPages.has(pageKey);
+    }, [codeText, pageKey, isAlwaysNormalSpeed]);
 
     useEffect(() => {
         if (currentIndex < codeText.length) {
@@ -33,11 +37,11 @@ function useTypewriter(
                 setCurrentIndex(prev => prev + 1);
             }, currentSpeed);
             return () => clearTimeout(timeout);
-        } else if (!isSecondTime.current && codeText.length > 0) {
+        } else if (!isAlwaysNormalSpeed && !isSecondTime.current && codeText.length > 0) {
             shownPages.add(pageKey);
             isSecondTime.current = true;
         }
-    }, [currentIndex, codeText, currentSpeed, pageKey]);
+    }, [currentIndex, codeText, currentSpeed, pageKey, isAlwaysNormalSpeed]);
 
     return displayedText;
 }
