@@ -3,14 +3,15 @@
 ## 概要
 
 このアプリは、FrontがNext.js（TypeScript）,BackがNest.jsで構築予定のポートフォリオです。  
-フロントエンドはVercelでホスティングし、バックエンドは任意のクラウドで運用予定。  
-アクセス解析（Google Analytics）や、今後はCI/CDやエラーログ監視（Sentry）の導入も予定しています。
+フロントエンドはVercelでホスティング。
+
 
 ---
 
 ## システム構成図
 
 ```plaintext
+
 クライアント
 (Webブラウザ/スマホ等)
       │
@@ -21,29 +22,20 @@
 │   ──────────────────────   │
 │   フロントエンド            │
 │   [Next.js] [TypeScript]    │
+│   ・Qiita API 直接fetch      │
 └────────────────────────────┘
-      │           │
+      │
       │           └─────────────→ Google Analytics
       │
-      │  REST API (fetch/axios)
+      │  HTTPSリクエスト
       ▼
 ┌────────────────────────────┐
-│      任意クラウド           │
-│   ──────────────────────   │
-│   バックエンド              │
-│   [NestJS] [TypeScript]     │
+│          Qiita API          │
 └────────────────────────────┘
-      │
-      ▼
-   任意DB
 
-┌───────────────────────────────┐
-│   今後の実装予定                │     
-│     ・CI/CD                    │
-│     ・エラーログ監視            │
-│       （Sentry）               │
-└───────────────────────────────┘
+
+
 ```
 
 
-<img src="/architect-infomation/architect.png" alt="構成図" width="600" />
+<!-- <img src="/architect-infomation/architect.png" alt="構成図" width="600" /> -->
