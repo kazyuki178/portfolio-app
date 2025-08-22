@@ -4,6 +4,7 @@ import Profile from '../../components/Profile'
 export const metadata = {
     title: "About | kazuki’s Portfolio",
     description: "ITエンジニア 矢橋和樹のプロフィール",
+    
 };
 
 
