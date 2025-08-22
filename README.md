@@ -2,7 +2,7 @@
 
 ## 概要
 
-このアプリは、FrontがNext.js（TypeScript）,BackがNest.jsで構築予定のポートフォリオです。  
+このアプリは、FrontがNext.js（TypeScript）で構築予定のポートフォリオです。  
 フロントエンドはVercelでホスティング。
 
 
