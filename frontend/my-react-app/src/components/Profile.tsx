@@ -9,7 +9,7 @@ import { ProfileProps } from '../interfaces/ProfileProps';
 const Profile = ({detailed}:ProfileProps) => {
     return (
         <>
-            <div className='flex flex-col md:flex-row gap-20 justify-center items-center mt-28 '>
+            <div className='flex flex-col md:flex-row gap-20 justify-center items-center mt-16 mb-14 '>
                 <TopImgAndSnsLinks />
                 <Bio detailed={detailed??false}/>
             </div>

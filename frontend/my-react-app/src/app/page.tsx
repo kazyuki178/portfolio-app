@@ -1,6 +1,7 @@
 
 
 import Profile from '../components/Profile';
+import RecentActivity from '../components/RecentActivity';
 
 
 export const metadata = {
@@ -11,10 +12,13 @@ export const metadata = {
 const App = () => {
   return (
     <>
+
       <Profile />
+
+      <RecentActivity />
     </>
   );
-  
+
 };
 
 export default App;
