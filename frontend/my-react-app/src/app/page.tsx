@@ -6,7 +6,7 @@ export const metadata = {
   description: "kazuki’s Portfolio Top。ITエンジニア矢橋和樹（Kazuki Yahashi）",
 };
 
-// async function にする
+
 export default async function App() {
   return (
     <>
