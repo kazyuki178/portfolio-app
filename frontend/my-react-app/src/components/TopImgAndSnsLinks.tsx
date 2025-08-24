@@ -42,7 +42,7 @@ function TopImg() {
 
     return (
         <>
-            <div className='flex flex-col items-center pt-24'>
+            <div className='flex flex-col items-center '>
                 {/* 
                 画像の元サイズ（ピクセル）**として240×240を指定
                 これによって、Next.jsは画像のアスペクト比やレイアウトを安定化
