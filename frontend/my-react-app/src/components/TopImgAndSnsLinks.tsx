@@ -4,16 +4,12 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBookAtlas } from '@fortawesome/free-solid-svg-icons';
-import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image';
 import useTypewriter from '../hooks/useTypewriter';
+import { SnsIconType } from '../interfaces/SnsIcon';
 function TopImg() {
 
-    type SnsIconType = {
-        icon: IconDefinition;
-        link: string;
-        name: string;
-    }
+
 
     const snsIcons: SnsIconType[] = [
         {
@@ -46,7 +42,7 @@ function TopImg() {
 
     return (
         <>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center pt-24'>
                 {/* 
                 画像の元サイズ（ピクセル）**として240×240を指定
                 これによって、Next.jsは画像のアスペクト比やレイアウトを安定化

@@ -23,7 +23,7 @@ const Bio = ({ detailed }: ProfileProps) => {
     }
 
     const meInfoTypeSpeed: number = 30;
-    const meBackGroundInfoTypeSpeed: number = 55;
+    const meBackGroundInfoTypeSpeed: number =45;
 
     const displayedMeInfoText = useTypewriter(meInfo, pageKey, meInfoTypeSpeed);
     const displayedBackgroundText = useTypewriter(meBackGroundInfo,pageKey, meBackGroundInfoTypeSpeed);
