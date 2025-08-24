@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { getQiitaItems } from '../lib/qiita';
-import type { QiitaItem } from '../interfaces/QiitaItem.ts'; // 型定義がある場合
+import type { QiitaItem } from '../interfaces/QiitaItem'; 
 
 export default function RecentActivity() {
     const [items, setItems] = useState<QiitaItem[]>([]);
