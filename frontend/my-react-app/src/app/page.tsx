@@ -10,6 +10,8 @@ export const metadata = {
 export default async function App(): Promise<ReactElement>  {
   return (
     <>
+    {/* next.jsは兄弟Componentでクライアントコンポーネントと
+    サーバコンポーネントは両立不可能なのでどちらもクライアントコンポーネント */}
       <Profile />
       <RecentActivity /> 
     </>

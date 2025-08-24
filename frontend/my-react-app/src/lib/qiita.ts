@@ -4,18 +4,14 @@
 // 再アクセス（revalidate 経過後） → 最初のアクセスで再生成、キャッシュ更新
 // ポイント → ページ単位でキャッシュ、ユーザーごとに API は叩かれない
 
+import { QiitaItem } from "../interfaces/QiitaItem";
+
+
 
 // 12時間ごとに生成
 export const revalidate = 60 * 60 * 12;
 const url: string = "https://qiita.com/api/v2/users/kazyuki178/items?page=1&per_page=5";
 
-
-interface QiitaItem {
-    id: string;
-    title: string;
-    url: string;
-    updated_at: string;
-}
 
 
 export const getQiitaItems = async (): Promise<QiitaItem[]> => {
