@@ -23,10 +23,10 @@ const Bio = ({ detailed }: ProfileProps) => {
     }
 
     const meInfoTypeSpeed: number = 30;
-    const meBackGroundInfoTypeSpeed: number =45;
+    const meBackGroundInfoTypeSpeed: number = 45;
 
     const displayedMeInfoText = useTypewriter(meInfo, pageKey, meInfoTypeSpeed);
-    const displayedBackgroundText = useTypewriter(meBackGroundInfo,pageKey, meBackGroundInfoTypeSpeed);
+    const displayedBackgroundText = useTypewriter(meBackGroundInfo, pageKey, meBackGroundInfoTypeSpeed);
 
     return (
 
@@ -38,22 +38,22 @@ const Bio = ({ detailed }: ProfileProps) => {
         <div className=' w-[350px] sm:w-[500px]  md:w-[350px] lg:w-[500px] text-sm'>
 
             <div
-                className={`bg-gray-900 text-green-400 p-4 rounded-lg font-mono shadow-2xl ${detailed ? "min-h-[200px]" : "min-h-[160px]"
-                    }`}
+                className={`bg-gray-900/90 border border-white/20 text-green-400 p-4 rounded-lg font-mono shadow-2xl ${detailed ? "min-h-[200px]" : "min-h-[160px]"} `}
                 style={{ whiteSpace: "pre-wrap" }}
             >
                 {displayedMeInfoText}
                 <span className="blinking-cursor text-white">|</span>
             </div>
 
+
             <div
-                className="bg-slate-100 shadow-2xl  rounded-lg mt-8 p-4 min-h-[240px]"
-
-
-                style={{ whiteSpace: 'pre-wrap' }} >
+                className="bg-slate-100/60 backdrop-blur-md border border-white/30 shadow-2xl rounded-lg mt-8 p-4 min-h-[240px]"
+                style={{ whiteSpace: 'pre-wrap' }}
+            >
                 {displayedBackgroundText}
                 <span className="blinking-cursor text-black">|</span>
             </div>
+
         </div>
     )
 }
