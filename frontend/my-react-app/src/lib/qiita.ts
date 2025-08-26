@@ -2,8 +2,8 @@
 import type { QiitaItem } from "../interfaces/QiitaItem";
 
 // 12時間ごとに ISR で再生成
-// * 60 * 12
-export const revalidate = 60 ;
+// 
+export const revalidate = 60 * 60 * 12;
 const url: string = "https://qiita.com/api/v2/users/kazyuki178/items?page=1&per_page=5";
 
 /**
