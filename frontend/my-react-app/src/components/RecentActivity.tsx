@@ -1,12 +1,11 @@
 import type { QiitaItem } from "../interfaces/QiitaItem";
-import { getQiitaItems } from "../lib/qiita";
-import type { ReactElement } from "react";
 
 
 
 
-export default async function RecentActivity() : Promise<ReactElement> {
-    const items: QiitaItem[] = await getQiitaItems();
+
+export default async function RecentActivity({items}:{items:QiitaItem[]})  {
+   
 
     // 更新日でソート
     const sortedItems = items.sort(

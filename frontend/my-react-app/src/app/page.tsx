@@ -1,5 +1,6 @@
 import Profile from '../components/Profile';
 import RecentActivity from '../components/RecentActivity';
+import { getQiitaItems } from '../lib/qiita';
 
 export const metadata = {
   title: "kazuki’s Portfolio Top | ITエンジニア 矢橋和樹 |",
@@ -8,11 +9,12 @@ export const metadata = {
 
 
 export default async function App()  {
+  const items = await getQiitaItems();
   return (
     <>
 
       <Profile />
-      <RecentActivity /> 
+      < RecentActivity items={items}/> 
     </>
   );
 }
