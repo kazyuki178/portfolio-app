@@ -5,7 +5,6 @@ import type { QiitaItem } from "../interfaces/QiitaItem";
 
 
 export default  function RecentActivity({items}:{items:QiitaItem[]})  {
-   
 
     // 更新日でソート
     const sortedItems = items.sort(
