@@ -22,7 +22,7 @@ export default  function RecentActivity({items}:{items:QiitaItem[]})  {
                     sortedItems.map((item: QiitaItem) => (
                         <li
                             key={item.id}
-                            className="mb-9 flex items-center justify-center bg-slate-100/60 backdrop-blur-md border border-white/30 shadow-2xl rounded-lg w-[350px] sm:w-[500px] md:w-[700px] h-24 p-3 transition-transform duration-300 hover:scale-105"
+                            className="mb-9 p-20 flex items-center justify-center bg-slate-100/60 backdrop-blur-md border border-white/30 shadow-2xl rounded-lg w-[350px] sm:w-[500px] md:w-[700px] md:p-6 h-24  transition-transform duration-300 hover:scale-105"
                         >
                             <a href={item.url} target="_blank" rel="noopener noreferrer"  
                                 className="flex flex-col  justify-center w-full h-full">
