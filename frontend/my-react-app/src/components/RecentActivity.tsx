@@ -1,9 +1,7 @@
 import type { QiitaItem } from "../interfaces/QiitaItem";
 import { getQiitaItems } from "../lib/qiita";
 
-// 12時間ごとに再生成
-export const revalidate = 60 * 60 * 12;
-const url: string = "https://qiita.com/api/v2/users/kazyuki178/items?page=1&per_page=5";
+
 
 
 
