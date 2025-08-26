@@ -4,7 +4,7 @@ import type { QiitaItem } from "../interfaces/QiitaItem";
 
 
 
-export default async function RecentActivity({items}:{items:QiitaItem[]})  {
+export default  function RecentActivity({items}:{items:QiitaItem[]})  {
    
 
     // 更新日でソート
