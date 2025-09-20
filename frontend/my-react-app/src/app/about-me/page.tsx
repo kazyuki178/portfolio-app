@@ -9,7 +9,7 @@ export const metadata = {
 
 const AboutMe = () => {
     return (
-        <Profile detailed={true} />
+        <Profile mode={"aboutMe"} />
     )
 
 }

@@ -5,13 +5,13 @@ import { ProfileProps } from '../interfaces/ProfileProps';
 
 
 
-const Bio = ({ detailed }: ProfileProps) => {
+const Bio = ({ mode }: ProfileProps) => {
     let meInfo: string;
     let meBackGroundInfo: string;
     let pageKey: string;
 
     // trueのときはaboutmeのpath
-    if (detailed) {
+    if (mode==="aboutMe") {
         meInfo = profileData.detail.meInfo;
         meBackGroundInfo = profileData.detail.meBackGroundInfo;
         pageKey = "aboutme";
@@ -38,7 +38,7 @@ const Bio = ({ detailed }: ProfileProps) => {
         <div className=' w-[350px] sm:w-[500px]  md:w-[350px] lg:w-[500px] text-sm'>
 
             <div
-                className={`bg-gray-900/90 border border-white/20 text-green-400 p-4 rounded-lg font-mono shadow-2xl ${detailed ? "min-h-[200px]" : "min-h-[160px]"} `}
+                className={`bg-gray-900/90 border border-white/20 text-green-400 p-4 rounded-lg font-mono shadow-2xl ${mode==="aboutMe" ? "min-h-[200px]" : "min-h-[160px]"} `}
                 style={{ whiteSpace: "pre-wrap" }}
             >
                 {displayedMeInfoText}
