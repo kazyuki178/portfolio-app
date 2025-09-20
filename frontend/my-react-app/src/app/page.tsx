@@ -13,7 +13,7 @@ export default async function App()  {
   return (
     <>
 
-      <Profile />
+      <Profile mode={"top"}/>
       < RecentActivity items={items}/> 
     </>
   );
