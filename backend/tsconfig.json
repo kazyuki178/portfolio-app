@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* 基本設定 */
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* 型・補助 */
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    /* 開発支援 */
+    "sourceMap": true,
+
+    /* その他（必要に応じて追加） */
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
